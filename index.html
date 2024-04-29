@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css"> 
+
+  
+  <title>MIT 3 | Intro component with sign up form</title>
+</head>
+<body>
+  <div class="total">
+    
+    
+    <div class="words">
+      <h1>Learn to code by<br>watching others</h1>
+      <p>See how experienced developers solve problems in real-time.<br>Watching scripted tutorials is great,but understanding how<br>developers think is invaluable.</p>
+    </div>
+    <div class="violet">
+      <button><strong>Try it free 7 days</strong> then $20/mo, thereafter</button>
+    </div>
+    <div class="box">
+      <input type="text" class="fname" id="fn" placeholder="First Name"><br>
+      <div id="fres" class="fres"></div><br>
+      <input type="text" class="lname" id="ln" placeholder="Last Name"><br>
+      <div id="lres" class="lres"></div><br>
+      <input type="email" class="mail" id="ms" placeholder="Email Address"><br>
+      <div id="mres" class="mres"></div><br>
+      <input type="password" class="pw" id="ps" placeholder="Password"><br>
+      <div id="pres" class="pres"></div><br>
+      <button onclick="submit()">CLAIM YOUR FREE TRIAL</button>
+      <div class="p1">
+        <h5>By clicking the button,you are agreeing to our</h5>
+      </div>
+      <div class="red">
+        <h4>Terms and Services</h4>
+      </div>
+    </div>
+  </div>
+  <script>
+    function submit(){
+
+    var first= "";
+    user = document.getElementById("fn").value;
+    var last= "";
+    pass = document.getElementById("ln").value;
+    var mails= "";
+    user = document.getElementById("ms").value;
+    var pws= "";
+    user = document.getElementById("ps").value;
+    var fnlength = first.length;
+    var lnlength = last.length;
+    var pwslength = pws.length;
+    var mlength = mails.length;
+    
+
+    if(fnlength ==0 ||lnlength ==0 || pwslength ==0 || mlength ==0){
+
+    document.getElementById("fres").style.color="red";  
+    document.getElementById("lres").style.color="red";  
+    document.getElementById("mres").style.color="red";  
+    document.getElementById("pres").style.color="red";  
+    document.getElementById("fres").textContent="Fill the missing Fields";
+    document.getElementById("lres").textContent="Fill the missing Fields";
+    document.getElementById("mres").textContent="Fill the missing Fields";
+    document.getElementById("pres").textContent="Fill the missing Fields";
+    document.getElementById("fres").style.borderColor="red";
+    document.getElementById("lres").style.borderColor="red";
+    document.getElementById("mres").style.borderColor="red";
+    document.getElementById("pres").style.borderColor="red";
+    }
+    else
+
+    if(fnlength <= 4 ){
+        document.getElementById("fres").style.color="red";  
+       document.getElementById("fres").textContent="Username should contain atleast 4 characters";
+       document.getElementById("fres").style.borderColor="red";
+       
+   
+    }
+    else if(pwslength <=6 || pwslength >=12){
+        document.getElementById("ps").style.color="red";  
+        document.getElementById("ps").textContent="Password should contain minimum 6 and maximum 16 characters";
+        
+    }
+    else {  
+      document.getElementById("fres").style.color="hsl(154, 59%, 51%)";
+      document.getElementById("lres").style.color="hsl(154, 59%, 51%)";
+      document.getElementById("mres").style.color="hsl(154, 59%, 51%)";
+      document.getElementById("pres").style.color="hsl(154, 59%, 51%)";  
+     
+    }
+      
+    }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+.total{
+    background-color: hsl(0, 100%, 74%) ;
+    background-image:url("images\bg-intro-desktop.png");
+    
+    .words{
+        border-style: none;
+        width:500px;
+        color:white;
+        font-size: 20px;
+        padding-left:250px;
+        transform: translateY(250px);
+    }
+    .violet{
+        
+        button{
+            width:470px;
+            background-color: hsl(248, 32%, 49%);
+            height:50px;
+            color: white;
+            border-radius: 7px;
+            margin-left:900px;
+            transform: translateY(-80px);
+        }
+    }
+    .box{
+        background-color: white;
+        border-style: none;
+        border-radius: 7px;
+        width:470px;
+        margin-left:900px;
+        margin-top: 20px;
+        transform: translateY(-80px);
+        align-items: center;
+        .fres, .lres, .mres, .pres{
+            float:right;
+            padding-right: 30px;
+            padding-top:5px;
+        }
+        .fname, .lname, .mail, .pw{
+            border-style: solid;
+            width:380px;
+            padding-left:25px;
+            margin-left:35px;
+            margin-top:25px;
+            padding-top:8px;
+            padding-bottom: 8px;
+            height:40px;
+            border-radius: 5px;
+            color:hsl(249, 10%, 26%);
+        
+        }
+        button{
+            border-style:none;
+            width:415px;
+            height:40px;
+            background-color: hsl(154, 59%, 51%);
+            color:white;
+            letter-spacing: 2px;
+            padding-left:15px;
+            margin-left:35px;
+            margin-top:25px;
+            padding-top:8px;
+            padding-bottom: 8px;
+            border-radius: 5px;
+        }
+        .p1, .red{
+            display:inline-block;
+            
+        }
+        .p1{
+            margin-left: 40px;
+        }
+        .red{
+            color: hsl(0, 100%, 74%);
+        }
+              
+       }
+        
+    
+}
+
